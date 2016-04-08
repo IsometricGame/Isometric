@@ -16,6 +16,7 @@ namespace Isometric
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            
         }
 
         /// <summary>
@@ -63,6 +64,8 @@ namespace Isometric
                 Exit();
 
             // TODO: Add your update logic here
+
+            InputHandler.Update();
 
             base.Update(gameTime);
         }
