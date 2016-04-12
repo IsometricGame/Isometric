@@ -9,9 +9,28 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Altharius_Game_Engine
 {
+    //TODO: Add types 
+    enum TileType
+    {
+        grass = 0,
+        wall = 1
+    }
+
     class Tile
     {
         public static Texture2D TileSetTexture;
+
+        public Tile(int tileNumber)
+        {
+            if(tileNumber == (int)TileType.grass)
+            {
+
+            }
+            else if(tileNumber == (int)TileType.wall)
+            {
+
+            }
+        }
 
         public static Rectangle GetSourceRectangle(int tileIndex)
         {
